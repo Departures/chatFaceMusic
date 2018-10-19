@@ -1,0 +1,37 @@
+
+body {
+    background-color: #eeeeee;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.board{
+}
+#friendList{
+    list-style: none;
+    border-left-color: lightgray;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+.friend{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.friend:hover{
+    cursor: pointer;
+}
+
+img.rounded-circle{
+    flex-grow: 0;
+    width: 35px;
+    height: 35px;
+}
+.friend > div{
+    flex-grow: 0;
+    text-align: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

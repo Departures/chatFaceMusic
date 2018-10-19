@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta author="ziqi">
+    <meta description="chat">
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+
+</head>
+<body>
+<div class="board container mt-3">
+    <div class="row  justify-content-end">
+        <ul id="friendList" class="col-3">
+            <li class="friend mt-1">
+                <!--head image-->
+                <img class="rounded-circle" src="img/head1.jpeg" alt="$username"/>
+                <!--user name 超出的字符变成"..."有问题-->
+                <div class="col-auto">q</div>
+            </li>
+            <li class="friend mt-1">
+                <img class="rounded-circle" src="img/head2.jpg" alt="$username"/>
+                <div class="col-auto">Michelle</div>
+            </li>
+            <li class="friend mt-1">
+                <img class="rounded-circle" src="img/head3.jpeg" alt="$username"/>
+                <div class="col-auto">Ryan</div>
+            </li>
+            <li class="friend mt-1">
+                <img class="rounded-circle" src="img/head4.jpg" alt="$username"/>
+                <div class="col-auto">Alex</div>
+            </li>
+        </ul>
+    </div>
+    </div>
+</div>
+<!--<ul class="pages">-->
+    <!--<li class="chat page">-->
+        <!--<div class="chatArea">-->
+            <!--<div class="messages"></div>-->
+        <!--</div>-->
+        <!--<input class="inputMessage" placeholder="Type here..."/>-->
+    <!--</li>-->
+<!--</ul>-->
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
