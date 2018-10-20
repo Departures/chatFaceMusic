@@ -4,13 +4,18 @@ body {
     font-family: 'Chakra Petch', sans-serif;
 }
 
-.board{
+div.container{
 }
-#friendList{
+div.row{
+    height: 100vh;
+}
+#friendList {
+    /*position: fixed;*/
     list-style: none;
     border-left-color: lightgray;
     border-left-width: 2px;
     border-left-style: solid;
+    overflow-y: auto;
 }
 .friend{
     display: flex;
@@ -18,9 +23,12 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+    margin-left: -37px;
+    margin-top: 2px;
 }
 .friend:hover{
     cursor: pointer;
+    background-color: lightgray;
 }
 
 img.rounded-circle{
@@ -34,4 +42,38 @@ img.rounded-circle{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+#chatFrame{
+    position: absolute;
+    bottom: 4px;
+    width: 330px;
+    height: 420px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px #888888;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgray;
+    background-color: white;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: lightgray;
+}
+svg{
+    margin-bottom: 4px;
+    margin-top: 2px;
+    margin-right: 10px;
+    fill: #666666;
+    width: 10px;
+    height: 10px;
+}
+svg:hover{
+    cursor: pointer;
+    fill: black;
 }
