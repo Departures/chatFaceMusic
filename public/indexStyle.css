@@ -4,18 +4,23 @@ body {
     font-family: 'Chakra Petch', sans-serif;
 }
 
-div.container{
-}
-div.row{
+div.board {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
     height: 100vh;
 }
 #friendList {
-    /*position: fixed;*/
+    background-color: white;
+    width: 230px;
     list-style: none;
     border-left-color: lightgray;
     border-left-width: 2px;
     border-left-style: solid;
     overflow-y: auto;
+    padding: 0;
+    margin: 0 8px 0;
 }
 .friend{
     display: flex;
@@ -23,38 +28,59 @@ div.row{
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    margin-left: -37px;
-    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 2px;
 }
 .friend:hover{
     cursor: pointer;
     background-color: lightgray;
 }
-
-img.rounded-circle{
-    flex-grow: 0;
+a{
     width: 35px;
     height: 35px;
+    background-color: #FFFF00;
+}
+.head:hover{
+    /*border-color: white;*/
+    /*border-style: solid;*/
+    /*border-width: thin;*/
+    box-shadow: 0px 0px 13px #007bff;
+
+}
+a > .head{
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    flex-grow: 0;
+    border-style: none;
+    border-radius: 6px;
+}
+
+a > svg.unread{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 6px;
+    height: 6px;
 }
 .friend > div{
+    width: 180px;
     flex-grow: 0;
     text-align: start;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding: 2px 4px;
 }
 
 #chatFrame{
-    position: absolute;
-    bottom: 4px;
     width: 330px;
     height: 420px;
     border-radius: 8px;
     box-shadow: 0px 0px 4px #888888;
-    border-width: 1px;
-    border-style: solid;
-    border-color: lightgray;
+    border-style: none;
     background-color: white;
+    margin:auto 8px 8px auto;
 }
 .icon{
     display: flex;
@@ -65,7 +91,7 @@ img.rounded-circle{
     border-top-right-radius: 8px;
     background-color: lightgray;
 }
-svg{
+svg.clickButton{
     margin-bottom: 4px;
     margin-top: 2px;
     margin-right: 10px;
@@ -73,7 +99,74 @@ svg{
     width: 10px;
     height: 10px;
 }
-svg:hover{
+svg.clickButton:hover{
     cursor: pointer;
     fill: black;
+}
+.chatDisplay{
+    width: 100%;
+    height: 340px;
+    border-style: none;
+    list-style: none;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+}
+.chatDisplay > li{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 8px;
+    padding: 0;
+    height: auto;
+}
+li > p{
+    max-width: 55%;
+    border-radius: 4px;
+    word-break: break-word;
+    padding: 0 4px;
+    height: auto;
+    margin:0;
+}
+li.send{
+    justify-content: flex-end;
+}
+li.send > p{
+    background-color: #0fbfff;
+}
+li.receive{
+    justify-content: flex-start;
+}
+li.receive > p{
+    background-color: lightgray;
+}
+li.receive > img{
+    margin-right: 2px;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+.chatTool{
+    width: 100%;
+    height: 25px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-color: lightgray;
+}
+#chatFrame > input{
+    height: 34px;
+    width: 100%;
+    padding: 1px 8px;
+    border-style: none;
+    outline: none;
+    font-size: small;
+}
+input::-webkit-input-placeholder{
+    color: dimgray;
+}
+input:focus::-webkit-input-placeholder{
+    color: lightgray;
 }
