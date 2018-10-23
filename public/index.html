@@ -54,45 +54,38 @@
             </li>
         </ul>
         <div class="chatTool">
+            <!--camera-->
+            <svg class="tool" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="48px" height="48px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+                <path d="M5.583,13c-0.553,0-1-0.447-1-1V3c0-0.553,0.447-1,1-1s1,0.447,1,1v9C6.583,12.553,6.136,13,5.583,13z"/>
+                <path d="M8.958,13c-0.553,0-1-0.447-1-1V2.25c0-0.553,0.447-1,1-1s1,0.447,1,1V12C9.958,12.553,9.511,13,8.958,13z"/>
+                <path d="M12.333,13c-0.553,0-1-0.447-1-1V2.25c0-0.553,0.447-1,1-1s1,0.447,1,1V12C13.333,12.553,12.886,13,12.333,13z"/>
+                <path d="M37.292,48H11.917C4.344,48,0,44.014,0,37.062V12.125C0,4.873,4.27,0,10.625,0h27.584C42.918,0,48,4.524,48,11.834v25.083 C48,43.132,43.297,48,37.292,48z M10.625,2C4.259,2,2,7.454,2,12.125v24.938C2,44.449,7.393,46,11.917,46h25.375 C42.257,46,46,42.095,46,36.917V11.834C46,5.76,41.956,2,38.209,2H10.625z"/>
+                <path d="M23.999,15.25c-4.234,0-7.667,3.434-7.667,7.668c0,4.234,3.433,7.666,7.667,7.666c4.233,0,7.667-3.432,7.667-7.666 C31.666,18.684,28.232,15.25,23.999,15.25z M23.999,26.75c-2.117,0-3.834-1.716-3.834-3.833s1.717-3.834,3.834-3.834 s3.834,1.717,3.834,3.834S26.116,26.75,23.999,26.75z"/>
+                <path d="M23.999,35.084c-6.709,0-12.167-5.458-12.167-12.167S17.29,10.75,23.999,10.75s12.167,5.458,12.167,12.167 S30.708,35.084,23.999,35.084z M23.999,12.75c-5.606,0-10.167,4.561-10.167,10.167c0,5.606,4.561,10.167,10.167,10.167 c5.606,0,10.167-4.561,10.167-10.167C34.166,17.311,29.605,12.75,23.999,12.75z"/>
+                <rect x="32.999" y="14.92" width="14" height="2.16"/>
+                <rect x="1.499" y="14.949" width="13.25" height="2.102"/>
+                <path d="M41.333,10.133c0,1.215-0.985,2.201-2.202,2.201h-3.264c-1.217,0-2.202-0.986-2.202-2.201V6.867 c0-1.215,0.985-2.201,2.202-2.201h3.264c1.217,0,2.202,0.986,2.202,2.201V10.133z"/>
+            </svg>
+            <!--photo-->
+            <svg class="tool" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve">
+                <path d="M14,24.138c3.071,0,5.569-2.498,5.569-5.568C19.569,15.498,17.071,13,14,13s-5.569,2.498-5.569,5.569 C8.431,21.64,10.929,24.138,14,24.138z M14,15c1.968,0,3.569,1.602,3.569,3.569S15.968,22.138,14,22.138s-3.569-1.601-3.569-3.568 S12.032,15,14,15z"/>
+                <path d="M1,0v40v12h50V40V0H1z M3,2h46v26.727l-10.324-9.464c-0.196-0.179-0.454-0.268-0.72-0.262 c-0.265,0.012-0.515,0.129-0.694,0.325l-9.794,10.727l-4.743-4.743c-0.374-0.373-0.972-0.392-1.368-0.044L4.622,40H3V2z M49,50H3 v-8h46V50z M7.649,40l14.324-12.611l10.302,10.301c0.391,0.391,1.023,0.391,1.414,0s0.391-1.023,0-1.414l-4.807-4.807l9.181-10.054 L49,31.44V40H7.649z"/>
+            </svg>
         </div>
+        
         <input placeholder="input..."/>
     </div>
     <!--friend list frame-->
     <ul id="friendList">
         <li class="friend">
             <!--head image-->
-            <a>
                 <img class="head img-thumbnail" src="img/head1.jpeg" alt="$username">
                 <svg class="unread" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
                     <path d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z" fill="#D80027"/>
                 </svg>
-            </a>
-
-            <!--user name 超出的字符变成"..."有问题-->
             <div>Loreen</div>
         </li>
-        <!--<li class="friend">-->
-            <!--<a class="img-thumbnail" src="img/head2.jpg" alt="$username"/>-->
-            <!--<div>Michelle</div>-->
-        <!--</li>-->
-        <!--<li class="friend">-->
-            <!--<img class="img-thumbnail" src="img/head3.jpeg" alt="$username"/>-->
-            <!--<div>Ryan</div>-->
-        <!--</li>-->
-        <!--<li class="friend">-->
-            <!--<img class="img-thumbnail" src="img/head4.jpg" alt="$username"/>-->
-            <!--<div>Alex</div>-->
-        <!--</li>-->
-        <!--<li class="friend">-->
-            <!--&lt;!&ndash;head image&ndash;&gt;-->
-            <!--<img class="img-thumbnail" src="img/head1.jpeg" alt="$username"/>-->
-            <!--&lt;!&ndash;user name 超出的字符变成"..."有问题&ndash;&gt;-->
-            <!--<div>q</div>-->
-        <!--</li>-->
-        <!--<li class="friend">-->
-            <!--<img class="img-thumbnail" src="img/head2.jpg" alt="$username"/>-->
-            <!--<div>MichelleKliflandRiceMariaLyric</div>-->
-        <!--</li>-->
     </ul>
 </div>
 
